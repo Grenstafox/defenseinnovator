@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Item - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="correo.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="https://www.benjoffe.com/code/games/torus/">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Product section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6"><div id="app" class="container">
+                        <Tarjeta data-image="https://image.smythstoys.com/original/desktop/211709.jpg">
+                          <h1 slot="header">Peter B. Parker</h1>
+                          <p slot="content">Sentinel Toys.</p>
+                        </Tarjeta>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="small mb-1">SKU: BST-498</div>
+                        <h1 class="display-5 fw-bolder">Sentinel Toys Peter B. Parker</h1>
+                        <div class="fs-5 mb-5">
+                            <span class="text-decoration-line-through">$95.00</span>
+                            <span>$80.00</span>
+                        </div>
+                        <p class="lead">Basado en la exitosa película Spider-Man: Into the Spider-Verse, Sentinel está emocionado de presentar "Peter B. Parker" como el segundo personaje de nuestra nueva serie de figuras SV-ACtion
+                          Esta es una figura totalmente articulada que te permite replicar varias escenas de batalla geniales y vívidas, así como una divertida vida cotidiana como se ve en la película
+                          Viene con una gran selección de piezas opcionales, incluyendo 2 cabezas para el traje de Spider-Man, 3 cabezas de Peter revelando su cara real, múltiples partes de mano para diferentes posturas para afectar piezas y objetos como tazas, vasos y periódicos, etc.
+                          Una enorme estatua de 18 cm de largo está incluida en esta versión, lo que permite aún más posibilidades de visualización</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                                <i class="bi-cart-fill me-1"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Related items section-->
+        <section class="py-5 bg-light ground">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="fw-bolder mb-4">Related products</h2>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <article>
+                              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                              <img class="card-img-top" src="https://m.media-amazon.com/images/I/617vUTl5v8L._AC_UF894,1000_QL80_.jpg" alt="..." />
+                              <img src="https://i.ebayimg.com/images/g/lDMAAOSwVoNjM62U/s-l1600.jpg" alt="">
+                              </article>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Magnificent Mecha MM01 Optimus Prime</h5>
+                                    <!-- Product price-->
+                                    $95.00 - $80.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto-1.html">View options</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <!-- Product image-->
+                            <article>
+                              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                              <img class="card-img-top" src="https://s3.amazonaws.com/tf.images/reduced-image_17575_7_1606790843.jpeg" alt="..." />
+                                  <img src="https://i.ebayimg.com/images/g/tOkAAOSw2m1iUTDI/s-l1200.webp" alt="">
+                              </article>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">MT-01 Megatank Monocraft</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$200.00</span>
+                                    $170.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto-3.html">View option</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <!-- Product image-->
+                            <article>
+                              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                              <img class="card-img-top" src="https://i5.walmartimages.com/asr/5f4deeed-2157-4b5f-9694-097f24cf9639.3917457cdf2ff0fd8719e3da0af64dab.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="..." />
+                              <img src="https://www.kapowtoys.es/uploads/2023/02/sv6.jpg" alt="">
+                          </article>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sentinel Toys Miles Morales</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$110.00</span>
+                                    $90.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto-6.html">View option</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <article>
+                              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                              <img class="card-img-top" src="https://collecticontoys.com/cdn/shop/products/reduced-galery_image_14220_27055_a4bc56b0-7e95-46a2-86f5-e19342d74d9b_1200x1200.jpg?v=1546753827" alt="..." />
+                              <img src=" https://http2.mlstatic.com/D_NQ_NP_909800-MLM70980169879_082023-O.webp" alt="">
+                            </article>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Black Apple, M06, MPM06, M-06, Iron Hide</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $112.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto-8.html">View option</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                  
+                  <script>
+                  Vue.config.devtools = true;
+          
+          Vue.component('Tarjeta', {
+            template: `
+              <div class="Tarjeta-wrap"
+                @mousemove="handleMouseMove"
+                @mouseenter="handleMouseEnter"
+                @mouseleave="handleMouseLeave"
+                ref="Tarjeta">
+                <div class="Tarjeta"
+                  :style="TarjetaStyle">
+                  <div class="Tarjeta-bg" :style="[TarjetaBgTransform, TarjetaBgImage]"></div>
+                  <div class="Tarjeta-info">
+                    <slot name="header"></slot>
+                    <slot name="content"></slot>
+                  </div>
+                </div>
+              </div>`,
+            mounted() {
+              this.width = this.$refs.Tarjeta.offsetWidth;
+              this.height = this.$refs.Tarjeta.offsetHeight;
+            },
+            props: ['dataImage'],
+            data: () => ({
+              width:  0,
+              height: 0,
+              mouseX: 0,
+              mouseY: 0,
+              mouseLeaveDelay: null
+            }),
+            computed: {
+              mousePX() {
+                return this.mouseX / this.width;
+              },
+              mousePY() {
+                return this.mouseY / this.height;
+              },
+              TarjetaStyle() {
+                const rX = this.mousePX * 30;
+                const rY = this.mousePY * -30;
+                return {
+                  transform: `rotateY(${rX}deg) rotateX(${rY}deg)`
+                };
+              },
+              TarjetaBgTransform() {
+                const tX = this.mousePX * -40;
+                const tY = this.mousePY * -40;
+                return {
+                  transform: `translateX(${tX}px) translateY(${tY}px)`
+                }
+              },
+              TarjetaBgImage() {
+                return {
+                  backgroundImage: `url(${this.dataImage})`
+                }
+              }
+            },
+            methods: {
+              handleMouseMove(e) {
+                this.mouseX = e.pageX - this.$refs.Tarjeta.offsetLeft - this.width/2;
+                this.mouseY = e.pageY - this.$refs.Tarjeta.offsetTop - this.height/2;
+              },
+              handleMouseEnter() {
+                clearTimeout(this.mouseLeaveDelay);
+              },
+              handleMouseLeave() {
+                this.mouseLeaveDelay = setTimeout(()=>{
+                  this.mouseX = 0;
+                  this.mouseY = 0;
+                }, 1000);
+              }
+            }
+          });
+          
+          const app = new Vue({
+            el: '#app'
+          });
+              </script>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
+<a href="" class="float">
+    <img class="img-w" src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="">
+</a>
