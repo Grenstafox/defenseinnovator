@@ -1,0 +1,176 @@
+html{
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  body{
+    font-family: "Ubuntu";
+    color: black;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+  }
+  
+  header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+   
+  }
+  
+  header img {
+    width: 12vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    
+  }
+  
+  header h1 {
+    font-size: 36px;
+  }
+  
+  header, header:before {
+    background: 50% 50% / cover;
+    
+  }
+  
+  header::before {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("https://www.zeldadungeon.net/wiki/images/thumb/7/7c/Happy_Mask_Shop.jpg/300px-Happy_Mask_Shop.jpg");
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+  }
+  
+  header * {
+    font-weight: normal;
+    letter-spacing: 0.3em;
+    text-align: center;
+    color: rgb(255, 0, 0);
+  }
+  
+  .main-contain {
+    margin-top: 500px;
+    background-color: white;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    padding-top: 50px;
+  }
+  
+  h3 {
+    text-align: center;
+    font-weight: 300;
+  }
+  
+  h1.anim{
+        text-align: center;
+        margin-bottom: 60px;
+  }
+   
+  p {
+        font-size: 16px;
+        font-weight: 300;
+  }
+  
+  p.anim{
+        width: 60%;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+  }
+  
+  
+  
+   
+  /* .work */
+   
+  .work {
+        text-align: center;
+        width: 100%;
+  }
+   
+  .work img {
+        margin: 1%;
+        width: 45%;
+        transition: .4s ease;
+  }
+  
+  .work img:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px red;
+    -webkit-box-shadow: 0px 0px 4px #111111;
+  }
+  
+  /* header2 */
+   
+  .header2 {
+        margin: 100px 200px auto;
+  }
+   
+  /* .work2 */
+  .work2 {
+        width: 100%;
+        text-align: center;
+  }
+   
+  .work2 img {
+        margin: 1%;
+        width: 94%;
+  }
+   
+  @media only screen and (max-width: 991px) {
+    
+    header img{
+      width: 30%;
+    }
+    
+    header p {
+              
+              width: 90%;
+              margin: auto;
+        }
+   
+        .work img {
+              margin: 2%;
+              width: 90%;
+        }
+   
+        .header2 {
+              margin: 130px 0 40px 12px;
+        }
+   
+        .header2 h1 {
+              font-size: 36px;
+        }
+   
+        .header2 p {
+              width: 90%;
+        }
+   
+        .work2 img {
+              margin: 2%;
+        }
+    
+  }
