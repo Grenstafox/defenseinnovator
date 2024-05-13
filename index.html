@@ -16,16 +16,7 @@
 
     </head>
     
-    <body>
-        <div class='cookie-container'>
-            <div class='cookie-content'>
-            Este sitio utiliza cookies para mejorar tu experiencia. Asumiré que estás de acuerdo con esto.
-            <div class='buttons'>
-            <button class='item'>Acepto</button>
-            <a class='item' href='https://www.monetizaconabrahan.es/p/cookies.html' target='_blank'>Leer más</a>
-            </div> 
-            </div> 
-            </div>            
+    <body>      
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
@@ -307,39 +298,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <b:skin>
-        /* ESTILOS DEL AVISO DE COOKIES */
-        :root{
-          --color-fondo-aviso: #fff;                /* Color de fondo del aviso de cookies */
-          --color-del-parrafo: #000;                /* Color del texto del aviso de cookies */
-          --tamano-parrafo: 16px;                   /* Tamaño de fuente del texto del aviso de cookies */
-          --color-boton-aceptar: #0c406a;          /* Color de fondo del botón "Acepto" en el aviso de cookies */
-          --color-texto-boton-aceptar: #fff;       /* Color del texto del botón "Acepto" en el aviso de cookies */
-          --color-texto-leer-mas: #f57c00;         /* Color del texto del enlace "Leer más" en el aviso de cookies */
-        }
-        .cookie-container{position:fixed;bottom:-100%;left:0;right:0;z-index:999999999999999;transition:400ms;background:var(--color-fondo-aviso);padding:15px;box-shadow:1px 7px 14px -5px rgba(0,0,0,.15);text-align:center;font-size:var(--tamano-parrafo)}
-        .cookie-content{color:var(--color-del-parrafo)}
-        .cookie-container.active{bottom:0}
-        .cookie-content .buttons{display:inline-flex;align-items:center;justify-content:center}
-        .cookie-content .buttons button{padding:10px 15px;border:none;outline:0;color:var(--color-texto-boton-aceptar);font-size:16px;font-weight:500;border-radius:5px;background:var(--color-boton-aceptar);cursor:pointer;transition:all .3s ease}
-        .cookie-content .buttons button:hover{transform:scale(0.97)}
-        .buttons .item{margin:0 10px}
-        .cookie-content .buttons a{color:var(--color-texto-leer-mas);font-weight:700}
-        /* FIN ESTILOS DEL AVISO DE COOKIES */
-        ]]></b:skin>
-        <script>
-            const cookieContainer = document.querySelector(&quot;.cookie-container&quot;);
-            const cookieButton = document.querySelector(&quot;.buttons .item&quot;);
-            cookieButton.addEventListener(&quot;click&quot;, () =&gt; {
-            cookieContainer.classList.remove(&quot;active&quot;);
-            localStorage.setItem(&quot;cookieBannerDisplayed&quot;, &quot;true&quot;);
-            });
-            setTimeout(() =&gt; {
-            if (!localStorage.getItem(&quot;cookieBannerDisplayed&quot;)) {
-            cookieContainer.classList.add(&quot;active&quot;);
-            }
-            }, 2000);
-            </script>
-            
     </body>
 </html>
